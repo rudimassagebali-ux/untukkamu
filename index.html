@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajakan Sabtu ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<div class="container">
+
+    <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="card">
+
+        <div class="slide active">
+            <h1>Halo Cantik ❤️</h1>
+            <p>Ada pertanyaan penting nih...</p>
+            <button onclick="nextSlide()">Lanjut ✨</button>
+        </div>
+
+        <div class="slide">
+            <h1>Hari Sabtu kosong nggak? 🤔</h1>
+            <button onclick="nextSlide()">Kosong 😁</button>
+            <button id="runBtn1" class="danger">Nggak Kosong 😒</button>
+        </div>
+
+        <div class="slide">
+            <h1>Mau keluar bareng aku nggak? ❤️</h1>
+            <button onclick="nextSlide()">Mau 🥰</button>
+            <button id="runBtn2" class="danger">Nggak Mau 🙈</button>
+        </div>
+
+        <div class="slide">
+            <h1>Kita mau ke mana? 😆</h1>
+
+            <div class="options">
+                <button onclick="selectPlace('Pantai')">🏖️ Pantai</button>
+                <button onclick="selectPlace('Nonton')">🎬 Nonton</button>
+                <button onclick="selectPlace('Mall')">🛍️ Mall</button>
+                <button onclick="selectPlace('Cafe')">☕ Cafe</button>
+                <button onclick="selectPlace('Kuliner')">🍜 Kuliner</button>
+            </div>
+        </div>
+
+        <div class="slide">
+            <h1>Pilih yang paling seru 😍</h1>
+            <div id="subOptions"></div>
+        </div>
+
+        <div class="slide">
+            <h1>Jam berapa berangkat? 🕒</h1>
+
+            <div class="options">
+                <button onclick="selectTime('10:00')">10:00</button>
+                <button onclick="selectTime('13:00')">13:00</button>
+                <button onclick="selectTime('15:00')">15:00</button>
+                <button onclick="selectTime('17:00')">17:00</button>
+            </div>
+        </div>
+
+       
+
+        <div class="slide">
+            <h1>Konfirmasi ❤️</h1>
+
+            <div id="summary"></div>
+
+            <button onclick="nextSlide()">Fix Banget ❤️</button>
+        </div>
+
+        <div class="slide">
+            <h1>Yeayyy 🎉❤️</h1>
+
+            <p>
+                Terima kasih sudah menerima ajakanku.
+                <br><br>
+                Screenshot halaman ini sebagai bukti ya 😆❤️
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
